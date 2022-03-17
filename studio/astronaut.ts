@@ -1,3 +1,5 @@
+import { Payload } from "./Payload"; 
+
 export class Astronaut implements Payload{
     
     // properties and methods
@@ -5,15 +7,12 @@ export class Astronaut implements Payload{
     name: string;
         
         constructor(massKg: number, name: string) {
-            this.massKg = 200;
-            this.name = "James";
+            this.massKg = massKg;
+            this.name = name;
          }
     
      }
-     interface Payload {
-        massKg: number;
-        name: string;
-    } 
+    
 
 
  
